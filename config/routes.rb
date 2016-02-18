@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :orders
+  resources :users
   get 'static_pages/about'
 
   get 'static_pages/home'
