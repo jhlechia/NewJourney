@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
+  resources :payments
+  resources :reviews
   resources :products
   resources :orders
   resources :users
   get 'static_pages/about'
-
   get 'static_pages/home'
+  get 'static_pages/welcome'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
