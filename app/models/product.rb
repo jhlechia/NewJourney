@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
   # belongs_to :order
-  has_many :orders
+  belongs_to :orders
   has_many :reviews
 end
