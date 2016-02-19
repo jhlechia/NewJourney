@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<% provide(:title, @user.first_name) %>
+<h1>
+  <%= gravatar_for @user %>
+  <%= @user.first_name %>
+</h1>
+
 <p>
   <strong>First name:</strong>
   <%= @user.first_name %>
