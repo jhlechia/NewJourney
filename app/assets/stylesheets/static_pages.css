@@ -60,80 +60,53 @@
 
 /*this is where the home page css starts*/
 
-header {
-  display: flex;
-  height: 5em;
+.header {
+  height: 20%;
+  width: 100%;
+  border-bottom: grey 2px;
+}
+
+.home_navbar a {
+  text-decoration: none;
 }
 
 .main {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-grow: column;
+  height: 100vh;
+}
+
+.main > div {
+  height: 50vh;
+  width: 50vw;
+  background-size: cover;
+}
+
+.main > div h2{
+  padding-left: 43%;
+  padding-top: 35%;
+  color: white;
+  border: white 2px solid;
+}
+
+.test {
+  background: grey;
 }
 
 .spain {
-
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 100%;
-  height: 60em;
-
-}
-.italy {
-  /*display: flex;*/
-  background-color: red;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 100%;
-  height: 60em;
-
-
-}
-.peru {
-  /*display: flex;*/
-  background-color: green;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 100%;
-  height: 60em;
-
+  background-image: url("https://goo.gl/5mm9RJ");
+  background-repeat: no-repeat;
 }
 
 .ireland {
-  /*display: flex;*/
-  background-color: black;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 100%;
-  height: 60em;
-
+  background-image: url("https://goo.gl/T1RhWx");
+  background-repeat: no-repeat;
 }
 
-footer {
-  display: flex;
-  height: 5em;
+.italy {
+  background-image: url("https://goo.gl/ywM6GJ");
+  background-repeat: no-repeat;
 }
 
-
-
-
-
-
-/*position: absolute;
-  font-size: 18px;
-  left: 0%;
-  top: 50%;
-  width: 100%;*/
-
-  /*color: white;*/
-  /*border: white 3px solid;
-  text-decoration: none;
-  display: inline;
-  /*padding: 6px 6px 6px 6px;
-  /*margin-left: auto;
-  margin-right: auto;*/
+.peru {
+  background-image: url("https://goo.gl/99eS5P");
+  background-repeat: no-repeat;
+}

@@ -26,6 +26,21 @@ class ReviewsController < ApplicationController
   def create
     @review = Review.new(review_params)
 
+    #example from tutorial that will create and link review with appropriate product
+
+  #   class CommentsController < ApplicationController
+  # def create
+  #   @article = Article.find(params[:article_id])
+  #   @comment = @article.comments.create(comment_params)
+  #   redirect_to article_path(@article)
+  # end
+
+  private
+    def comment_params
+      params.require(:comment).permit(:commenter, :body)
+    end
+end
+
     respond_to do |format|
       if @review.save
         format.html { redirect_to @review, notice: 'Review was successfully created.' }
