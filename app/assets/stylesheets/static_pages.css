@@ -31,8 +31,9 @@
     padding: 20px 12px 24px 12px;
     text-decoration: none;
     position: absolute;
-    left: 30%;
-    top: 70%;
+    left: 28%;
+    top: 50%;
+    /*20px 12px 24px 12px;*/
     /*these bottom two allow the background of the button to have an opacity of white making the wording easier to see*/
     background-color: white;
     opacity: 0.6;
@@ -70,6 +71,11 @@
   text-decoration: none;
 }
 
+.home_navbar a:first-child {
+    border: black 1px solid;
+    padding: 2px 4px 2px 4px;
+}
+
 .main {
   height: 100vh;
 }
@@ -78,27 +84,44 @@
   height: 50vh;
   width: 50vw;
   background-size: cover;
+
+
 }
 
-.main > div h2{
-  padding-left: 43%;
-  padding-top: 35%;
-  color: white;
-  border: white 2px solid;
+.header {
+  margin-bottom: 2%;
 }
 
-.test {
-  background: grey;
+a.store-btn {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  display: inline;
+  border: white 3px solid;
+  padding: 20px 16px 24px 16px;
+  text-decoration: none;
+  position: relative;
+  left: 40%;
+  top: 50%;
+  /*these bottom two allow the background of the button to have an opacity of white making the wording easier to see*/
+  background-color: white;
+  opacity: 0.6;
+}
+
+a.store-btn:hover {
+  background:gray;
 }
 
 .spain {
   background-image: url("https://goo.gl/5mm9RJ");
   background-repeat: no-repeat;
+  float: right;
 }
 
 .ireland {
   background-image: url("https://goo.gl/T1RhWx");
   background-repeat: no-repeat;
+  float:right;
 }
 
 .italy {
@@ -109,4 +132,8 @@
 .peru {
   background-image: url("https://goo.gl/99eS5P");
   background-repeat: no-repeat;
+}
+
+ .footer .home_navbar ul li {
+  list-style: none;
 }
