@@ -1,4 +1,8 @@
 class User < ActiveRecord::Base
+  has_many :orders :dependent => :destroy
+  has_many :products, through :orders
+  has_many :reviews
+
   before_save { self.email = email.downcase }
   validates :first_name, presence: true, length: { maximum: 50 }
   validates :last_name, presence: true, length: { maximum: 50 }

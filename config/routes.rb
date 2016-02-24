@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get 'sessions/new'
-  resources :payments
   resources :reviews
   resources :products
   resources :orders
